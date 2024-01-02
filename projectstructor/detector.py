@@ -23,8 +23,9 @@ class ProjectStructureDetector:
             relative_dirs = [os.path.relpath(os.path.join(root, d), self.directory) for d in dirs]
             relative_files = [os.path.relpath(os.path.join(root, f), self.directory) for f in files]
 
-            dirs[:] = [d for d in relative_dirs if not gitignore_spec.match_file(d)]
-            files = [f for f in relative_files if not gitignore_spec.match_file(f)]
+            if gitignore_spec:
+                dirs[:] = [d for d in relative_dirs if not gitignore_spec.match_file(d)]
+                files = [f for f in relative_files if not gitignore_spec.match_file(f)]
 
             for name in files:
                 if len(file_structure) + len(name) < 1500:
