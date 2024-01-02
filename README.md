@@ -1,4 +1,3 @@
-
 [![PyPI version](https://badge.fury.io/py/ProjectStructoR.svg)](https://badge.fury.io/py/ProjectStructoR)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Downloads](https://static.pepy.tech/badge/projectstructor)](https://pepy.tech/project/projectstructor)
@@ -34,6 +33,12 @@ print(detector.detect_structure(ignore_gitignore=True))
 
 # Detect the languages used in the project
 print(detector.detect_languages())
+
+# Analyze with GPT and print the JSON result
+chat_completion = detector.analyze_with_gpt()
+content = chat_completion.choices[0].message.content
+result = json.loads(content)
+print(json.dumps(result, indent=2))
 ```
 
 ### As a Command Line Tool
@@ -63,4 +68,4 @@ Contributions, issues, and feature requests are welcome! Feel free to check [iss
 
 ## License
 
-MIT
+[MIT](https://choosealicense.com/licenses/mit/)
