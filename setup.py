@@ -1,9 +1,14 @@
 from setuptools import setup, find_packages
 
+with open('README.md', encoding='utf-8') as f:
+    long_description = f.read()
+
 setup(
     name='ProjectStructoR',
-    version='0.0.1',
+    version='0.0.2',
     description='A tool for detecting project structure and technology stack with the help of GPT.',
+    long_description=long_description,
+    long_description_content_type='text/markdown',
     author='Eugene Evstafev',
     author_email='chigwel@gmail.com',
     url='https://github.com/chigwell/projectstructor',
