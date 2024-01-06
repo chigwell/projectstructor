@@ -1,6 +1,6 @@
 import os
 from lngdetector.main import generate_report
-from .gpt_integration import GPTIntegration
+from gptintegration import GPTIntegration
 import pathspec
 
 class ProjectStructureDetector:

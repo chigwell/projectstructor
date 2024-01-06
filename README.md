@@ -1,5 +1,5 @@
 [![PyPI version](https://badge.fury.io/py/ProjectStructoR.svg)](https://badge.fury.io/py/ProjectStructoR)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 [![Downloads](https://static.pepy.tech/badge/projectstructor)](https://pepy.tech/project/projectstructor)
 
 # ProjectStructoR
