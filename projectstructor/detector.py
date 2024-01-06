@@ -45,5 +45,5 @@ class ProjectStructureDetector:
         user_message = "I need an analysis of the frameworks and technology stacks used in my project based on the following project file structure and language report: \n\n" + self.detect_structure() + "\n\n" + self.detect_languages() + "\n\n"
 
         gpt_integration = GPTIntegration(self.gpt_api_key, self.gpt_model)
-        response = gpt_integration.query_gpt(system_message, user_message)
+        response = gpt_integration.query_gpt(system_message, [user_message])
         return response
