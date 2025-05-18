@@ -5,7 +5,7 @@ with open('README.md', encoding='utf-8') as f:
 
 setup(
     name='ProjectStructoR',
-    version='0.0.8',
+    version='2025.5.180959',
     description='A tool for detecting project structure and technology stack with the help of GPT.',
     long_description=long_description,
     long_description_content_type='text/markdown',
